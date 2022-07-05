@@ -1,0 +1,456 @@
+/* ============ CONTAINER ============ */
+@media (max-width: 1160px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+@media (max-width: 1030px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 930px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 910px) {
+  nav #menu {
+    gap: 20px;
+    font-size: 1.3rem;
+  }
+  nav .contact {
+    font-size: 1.3rem;
+  }
+}
+/* ============ NAVBAR ============ */
+.fa-bars {
+  display: none !important;
+}
+@media (max-width: 800px) {
+  nav #menu,
+  nav .contact {
+    display: none;
+  }
+  nav .fa-bars {
+    display: flex !important;
+    font-size: 2.1rem;
+    cursor: pointer;
+    margin-bottom: -3px;
+  }
+}
+#nav-phone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  /* for js */
+  transition: 0.3s;
+  opacity: 0;
+  pointer-events: none;
+}
+#nav-phone a {
+  transition: 0.3s;
+  position: relative;
+  gap: 25px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--bg1);
+}
+#nav-phone a:hover {
+  letter-spacing: 7px;
+}
+#nav-phone .fa-xmark {
+  font-size: 2.1rem;
+  cursor: pointer;
+  position: fixed;
+  right: 50px;
+  top: 30px;
+  color: var(--bg1);
+  transition: 0.4s;
+}
+#nav-phone .fa-xmark:hover {
+  color: red;
+}
+#nav-phone.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+/* ============ HOME ============ */
+@media (max-width: 1290px) {
+  header .right {
+    transform: scale(0.9);
+    margin-right: -50px;
+  }
+  header .left {
+    transform: scale(0.9);
+    margin-left: -25px;
+  }
+}
+@media (max-width: 1060px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  header .left h1 {
+    margin-top: 100px;
+  }
+  header .left form button {
+    right: 25px;
+  }
+  header .left .numbers {
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  header .right {
+    transform: scale(0.9);
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+  header .left {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 580px) {
+  header .left h1 {
+    font-size: 3.2rem;
+  }
+  header .left form,
+  header .left .numbers {
+    transform: scale(0.9);
+  }
+  header .right {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 520px) {
+  header .left form input[type="email"] {
+    width: 450px;
+    height: 65px;
+  }
+  header .left form button {
+    right: 15px;
+  }
+  header .left h1 {
+    font-size: 3rem;
+    line-height: 52px;
+  }
+  header .right {
+    transform: scale(0.75);
+  }
+}
+@media (max-width: 400px) {
+  header .left {
+    transform: scale(0.79);
+  }
+  header .right {
+    transform: scale(0.7);
+    margin-top: -30px;
+  }
+  header .left .numbers {
+    margin-bottom: 0px;
+  }
+  header .left form input[type="email"] {
+    width: 420px;
+  }
+}
+/* ============ ABOUT ============ */
+@media (max-width: 1000px) {
+  #about .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex-direction: column-reverse;
+    text-align: left;
+    gap: 150px;
+  }
+  #about .right {
+    display: flex;
+    gap: 40px;
+  }
+  #about .right .advantages {
+    margin: 0;
+    gap: 10px;
+  }
+}
+@media (max-width: 850px) {
+  #about .right {
+    display: block;
+  }
+  #about .right .advantages {
+    gap: 5px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 600px) {
+  #about .container {
+    gap: 100px;
+    padding-bottom: 50px;
+  }
+  #about .right {
+    transform: scale(0.9);
+  }
+  #about .left {
+    transform: scale(0.85);
+  }
+}
+@media (max-width: 450px) {
+  #about .container {
+    gap: 5px;
+    padding: 0;
+    padding-bottom: 25px;
+  }
+  #about .right {
+    transform: scale(0.8);
+  }
+  #about .left {
+    transform: scale(0.7);
+  }
+}
+/* <!-- ============== INTERNSHIPS ============== --> */
+@media (max-width: 500px) {
+  #internships .main {
+    padding: 80px 20px;
+  }
+  #internships .main .fx {
+    width: 110px;
+    margin: 0px;
+  }
+
+  #internships .main .yt {
+    width: 90px;
+  }
+  #internships .main .gl {
+    width: 130px;
+  }
+  #internships .main .ms {
+    width: 170px;
+  }
+}
+/* <!-- ============== COURSES ============== --> */
+@media (max-width: 1250px) {
+  #courses h1 {
+    margin-top: 30px;
+  }
+  #courses .parent {
+    gap: 40px;
+  }
+}
+@media (max-width: 500px) {
+  #courses h1 {
+    line-height: 44px;
+  }
+  #courses .parent {
+    gap: 25px;
+  }
+}
+
+/* <!-- ============== TESTMONIALS ============== --> */
+@media (max-width: 1000px) {
+  #testi .swiper {
+    width: 100% !important;
+  }
+}
+@media (max-width: 680px) {
+  #testi .text h1 {
+    font-size: 2.3rem;
+    line-height: 40px;
+  }
+  #testi .text p {
+    font-size: 0.9rem;
+    margin: 20px 0px 40px;
+  }
+  #testi .swiper {
+    height: 550px;
+  }
+  #testi .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  #testi .swiper-slide .right {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+  #testi .swiper-slide .right h1 {
+    margin-top: 10px;
+  }
+  #testi .swiper-slide .right p {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  #testi .swiper-slide .right h2 {
+    display: none;
+  }
+  #testi .swiper-slide .right .stars {
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  #testi .swiper {
+    height: 510px;
+  }
+  #testi .swiper-slide .right .stars {
+    transform: scale(0.7);
+    margin-top: -5px;
+  }
+  #testi .swiper-slide .right p {
+    font-size: 0.9rem;
+    margin-top: 0px;
+    line-height: 17px;
+  }
+  #testi .swiper-slide .right h1 {
+    font-size: 1.8rem;
+    margin-top: 0px;
+  }
+  #testi .swiper-slide .left {
+    width: 230px;
+    margin-top: -33px;
+  }
+}
+/* <!-- ============== NUMBERS  ============== --> */
+@media (max-width: 1000px) {
+  #numbers .parent {
+    transform: scale(0.9);
+  }
+  #numbers .container {
+    gap: 20px;
+  }
+}
+@media (max-width: 800px) {
+  #numbers .parent {
+    transform: scale(0.8);
+  }
+  #numbers .container {
+    gap: 0px;
+  }
+}
+@media (max-width: 680px) {
+  #numbers .container {
+    flex-direction: column;
+    background-image: linear-gradient(
+      90deg,
+      var(--bg2) 50%,
+      var(--bg1) 50%,
+      var(--bg1) 100%
+    );
+    padding: 60px 0px 50px;
+  }
+  #numbers .parent {
+    transform: scale(0.85);
+  }
+}
+/* ============ CONTACT ============ */
+@media (max-width: 1290px) {
+  #contact .left {
+    transform: scale(0.9);
+    margin-left: -25px;
+  }
+}
+@media (max-width: 1060px) {
+  #contact .container {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  #contact .left h1 {
+    margin-top: 100px;
+  }
+  #contact .left form button {
+    right: 35px;
+  }
+  #contact .left {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 580px) {
+  #contact .left h1 {
+    font-size: 3.2rem;
+  }
+  #contact.left form {
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 520px) {
+  #contact .left form input[type="email"] {
+    width: 450px;
+    height: 65px;
+  }
+  #contact .left form button {
+    right: 15px;
+  }
+  #contact .left h1 {
+    font-size: 3rem;
+    line-height: 52px;
+  }
+  #contact .right {
+    margin-top: -30px;
+    transform: scale(0.75);
+  }
+}
+@media (max-width: 400px) {
+  #contact .left {
+    transform: scale(0.7);
+  }
+  #contact .left form input[type="email"] {
+    width: 420px;
+  }
+  #contact .right {
+    margin-top: -50px;
+    transform: scale(0.7);
+  }
+  #contact .left h1 {
+   margin-top: 40px; 
+}
+}
+/* ============ FOOTER ============ */
+@media (max-width: 800px) {
+  footer .container {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  footer .left,
+  footer .right {
+    width: 100%;
+  }
+  footer .right .links {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  footer .right .logos {
+    margin-top: 3rem;
+    width: 100%;
+    justify-content: center;
+  }
+  footer .right form {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  footer .left .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: left;
+    margin-top: 40px;
+  }
+  footer .left .links div h1 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  footer .left img {
+    display: flex;
+    align-self: start;
+  }
+}

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codin</title>
+    <!-- Main Style -->
+    <link rel="stylesheet" href="./Style/main.css" />
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="./Style/mediaQ.css" />
+    <!-- Font Awesom -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav>
+      <div class="container">
+        <img class="logo" src="./imgs/logo.png" alt="codin logo" />
+        <div id="menu">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#courses">Courses</a>
+          <a href="#testi">Testimonials</a>
+        </div>
+        <a href="contact" class="contact">Contact</a>
+        <!-- for phone -->
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div id="nav-phone">
+        <i class="fa-solid fa-xmark"></i>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#testi">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- ================= HOME ================= -->
+    <header id="home">
+      <div class="container">
+        <div class="left">
+          <h1>
+            Everything You<br />
+            Want In One Place.
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipi<br />scing elit, sed
+            do eiusmod tempor<br />ut labore et dolore magna aliqua. Quis ipsum
+          </p>
+          <form action="">
+            <input type="email" placeholder="Enter Your E-Mail Address" />
+            <button>Sign in</button>
+          </form>
+          <div class="numbers">
+            <div class="child">
+              <h2>26K+</h2>
+              <h3>Appreciates</h3>
+            </div>
+            <div class="child">
+              <h2>4.3K+</h2>
+              <h3>Courses</h3>
+            </div>
+            <div class="child">
+              <h2>100+</h2>
+              <h3>Countries</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <img class="home-model" src="./imgs/homeModel.png" alt="homeModel" />
+          <div class="icon">
+            <img src="./imgs/instagram.png" alt="instIcon" />
+          </div>
+          <div class="icon">
+            <img src="./imgs/mortarboard.png" alt="mortarboardIcon" />
+          </div>
+          <div class="icon"><img src="./imgs/tips.png" alt="tipsIcon" /></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about">
+      <div class="container">
+        <div class="left" data-aos="fade-right">
+          <img src="./imgs/aboutModel.png" alt="about model" />
+        </div>
+        <div class="right" data-aos="fade-left">
+          <div>
+            <h1>
+              Why we learn<br />
+              from <span>CODIN</span>
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipi<br />scing elit, sed
+              do eiusmod tempor<br />ut labore et dolore magna aliqua. Quis
+              ipsum
+            </p>
+          </div>
+          <div class="advantages">
+            <figure>
+              <img src="./icons/accept.png" alt="correct icon" />
+              Expreinced Mentors
+            </figure>
+            <figure>
+              <img src="./icons/accept.png" alt="correct icon" />
+              Frindly Prices
+            </figure>
+            <figure>
+              <img src="./icons/accept.png" alt="correct icon" />
+              High Quality Courses
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== INTERNSHIPS ============== -->
+    <section id="internships">
+      <div class="main">
+        <img
+          class="gl"
+          src="./icons/google.png"
+          alt="google"
+          data-aos="fade-left"
+        />
+        <img
+          class="fx"
+          src="./icons/FedEx.png"
+          alt="FedEx"
+          data-aos="fade-right"
+        />
+        <img
+          class="yt"
+          src="./icons/YouTube.png"
+          alt="youtube"
+          data-aos="fade-left"
+        />
+        <img
+          class="ms"
+          src="./icons/Microsoft.png"
+          alt="Microsoft"
+          data-aos="fade-right"
+        />
+      </div>
+    </section>
+
+    <!-- ============== COURSES ============== -->
+    <section id="courses">
+      <div class="container">
+        <h1>Explore <span>CODIN</span> Courses</h1>
+        <div class="parent">
+          <div class="child">
+            <img src="./icons/report.png" alt="icon" />
+            <h2>Data Science</h2>
+          </div>
+          <div class="child">
+            <img src="./icons/graphic-tablet.png" alt="icon" />
+            <h2>Graphic Design</h2>
+          </div>
+          <div class="child">
+            <img src="./icons/social-media.png" alt="icon" />
+            <h2>Marketing</h2>
+          </div>
+          <div class="child">
+            <img src="./icons/video-camera.png" alt="icon" />
+            <h2>Photography</h2>
+          </div>
+          <div class="child">
+            <img src="./icons/ux.png" alt="icon" />
+            <h2>Web Design</h2>
+          </div>
+          <div class="child">
+            <img src="./icons/animate.png" alt="icon" />
+            <h2>Motion Graphic</h2>
+          </div>
+          <div class="child">
+            <img src="./icons/business.png" alt="icon" />
+            <h2>Business</h2>
+          </div>
+          <div class="child">
+            <img src="./icons/binary-code.png" alt="icon" />
+            <h2>Computer Science</h2>
+          </div>
+          <div class="child">
+            <img src="./icons/recording.png" alt="icon" />
+            <h2>Voice Over</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== TESTIMONAILS ============== -->
+    <section id="testi">
+      <div class="container">
+        <div class="text">
+          <h1>People Says About Courses</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipi sed do eiusmod
+            tempor<br />ut labQuis ipsum suspendisse umsan lacus vel facilisis.
+          </p>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Amr 1 -->
+            <div class="swiper-slide">
+              <img src="./imgs/Amr.png" alt="man model" class="left" />
+              <div class="right">
+                <div class="stars">
+                  <img src="./icons/star.png" alt="star icon" />
+                  <img src="./icons/star.png" alt="star icon" />
+                  <img src="./icons/star.png" alt="star icon" />
+                  <img src="./icons/star.png" alt="star icon" />
+                  <img src="./icons/star.png" alt="star icon" />
+                </div>
+                <h1>Amr Magdy</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur eiusmod tempor ut
+                  labore et dolore magna aliqua. Quis ipsum
+                </p>
+                <h2>Web Track</h2>
+              </div>
+            </div>
+            <!-- Mai 1 -->
+            <div class="swiper-slide">
+              <img src="./imgs/Mai.png" alt="woman model" class="left" />
+              <div class="right">
+                <div class="stars">
+                  <img src="./icons/star.png" alt="star icon" />
+                  <img src="./icons/star.png" alt="star icon" />
+                  <img src="./icons/star.png" alt="star icon" />
+                  <img src="./icons/star.png" alt="star icon" />
+                  <img src="./icons/star.png" alt="star icon" />
+                </div>
+                <h1>Mai Ahmed</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur eiusmod tempor ut
+                  labore et dolore magna aliqua. Quis ipsum
+                </p>
+                <h2>Motion Graphic Track</h2>
+              </div>
+            </div>
+            <!-- Amr 2 -->
+            <div class="swiper-slide">
+              <img src="./imgs/Amr.png" alt="man model" class="left" />
+              <div class="right">
+                <div class="stars">
+                  <img src="./icons/star.png" alt="star icon" />
+                  <img src="./icons/star.png" alt="star icon" />
+                  <img src="./icons/star.png" alt="star icon" />
+                  <img src="./icons/star.png" alt="star icon" />
+                  <img src="./icons/star.png" alt="star icon" />
+                </div>
+                <h1>Amr Magdy</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur eiusmod tempor ut
+                  labore et dolore magna aliqua. Quis ipsum
+                </p>
+                <h2>Web Track</h2>
+              </div>
+            </div>
+            <!-- Mai 2 -->
+            <div class="swiper-slide">
+              <img src="./imgs/Mai.png" alt="woman model" class="left" />
+              <div class="right">
+                <div class="stars">
+                  <img src="./icons/star.png" alt="star icon" />
+                  <img src="./icons/star.png" alt="star icon" />
+                  <img src="./icons/star.png" alt="star icon" />
+                  <img src="./icons/star.png" alt="star icon" />
+                  <img src="./icons/star.png" alt="star icon" />
+                </div>
+                <h1>Mai Ahmed</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur eiusmod tempor ut
+                  labore et dolore magna aliqua. Quis ipsum
+                </p>
+                <h2>Motion Graphic Track</h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== NUMBERS ============== -->
+    <section id="numbers">
+      <div class="container">
+        <div class="parent" data-aos="fade-up">
+          <div class="text">
+            <h1>+25</h1>
+            <h2>Populer<br />Instructors</h2>
+          </div>
+          <img src="./imgs/shape.png" alt="shape frame" />
+        </div>
+        <div class="parent" data-aos="fade-up" data-aos-delay="100">
+          <div class="text">
+            <h1>+25</h1>
+            <h2>Populer<br />Instructors</h2>
+          </div>
+          <img src="./imgs/shape.png" alt="shape frame" />
+        </div>
+        <div class="parent" data-aos="fade-up" data-aos-delay="200">
+          <div class="text">
+            <h1>+25</h1>
+            <h2>Populer<br />Instructors</h2>
+          </div>
+          <img src="./imgs/shape.png" alt="shape frame" />
+        </div>
+        <div class="parent" data-aos="fade-up" data-aos-delay="300">
+          <div class="text">
+            <h1>+25</h1>
+            <h2>Populer<br />Instructors</h2>
+          </div>
+          <img src="./imgs/shape.png" alt="shape frame" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact">
+      <div class="container">
+        <div class="left" data-aos="fade-right">
+          <h1>
+            Are You Ready<br />
+            For Today’s Courses?
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipi<br />scing elit, sed
+            do eiusmod tempor<br />ut labore et dolore magna aliqua. Quis ipsum
+          </p>
+          <form action="">
+            <input type="email" placeholder="Enter Your E-Mail Address" />
+            <button>Sign in</button>
+          </form>
+        </div>
+        <div class="right" data-aos="fade-up">
+          <img src="./imgs/contactModel.png" alt="about model" />
+        </div>
+      </div>
+    </section>
+    <!-- ============== FOOTER ============== -->
+    <footer>
+      <div class="container">
+        <div class="left">
+          <img src="./imgs/logo.png" alt="codin logo" />
+          <div class="links">
+            <div>
+              <h1>CODIN</h1>
+              <a href="">About</a>
+              <a href="">Bussiness</a>
+              <a href="">Afilliate</a>
+              <a href="">Careers</a>
+            </div>
+            <div>
+              <h1>Contact</h1>
+              <a href="">Blog</a>
+              <a href="">Contact us</a>
+              <a href="">Help center</a>
+              <a href="">Media kit</a>
+            </div>
+            <div>
+              <h1>Legal</h1>
+              <a href="">Terms of service</a>
+              <a href="">Privacy policy</a>
+              <a href="">Accessibility policy</a>
+              <a href="">Trademark policy</a>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="links">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <form action="">
+            <label for="lang">Choose Language</label>
+            <br />
+            <select id="lang">
+              <option value="arabic">Arabic</option>
+              <option value="english">English</option>
+            </select>
+            <button>Apply</button>
+          </form>
+          <div class="logos">
+            <img src="./icons/googlePlay.png" alt="google play" />
+            <img src="./icons/appStore.png" alt="app store" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============== SCRIPTS ============== -->
+    <!-- main -->
+    <script src="./scripts.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
